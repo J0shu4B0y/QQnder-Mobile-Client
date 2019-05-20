@@ -1,0 +1,73 @@
+<h1>twitter Module</h1>
+<h2>Description</h2>
+<p>Tap into the new iOS5 Twitter.framework (also works with iOS6 and later
+with the Social.framework)</p>
+<h2>Installation</h2>
+<p><a href="">http://wiki.appcelerator.org/display/tis/Using+Titanium+Modules</a></p>
+<p>To use this module since version 1.0 you must be using at least Xcode 4.5
+with iOS SDK 6.0 or later.</p>
+<h2>Changelog</h2>
+<p>See <a href="changelog.html">here</a></p>
+<h2>Accessing the twitter Module</h2>
+<p>To access this module from JavaScript, you would do the following:</p>
+<pre><code>var Twitter = require("com.0x82.twitter");
+</code></pre>
+<p>The Twitter variable is a reference to the Module object.   </p>
+<h3>iOS5 module only</h3>
+<p>This is an iOS5 module only! If you try to require it on an iOS &lt; = 4 device,
+it will throw an exception. So you should include some sort of code on
+your application to check in which version of iOS are you running, and then
+decide to use or not use this module</p>
+<pre><code>function isiOS5Plus()
+{
+  // add iphone specific tests
+  if (Titanium.Platform.name == 'iPhone OS')
+  {
+    var version = Titanium.Platform.version.split(".");
+    var major = parseInt(version[0],10);
+
+    if (major &gt;= 5)
+    {
+      return true;
+    }
+  }
+  return false;
+}
+</code></pre>
+<h2>Reference</h2>
+<p>Please visit the following links to see the different classes of the application:</p>
+<ul>
+<li><a href="tweet_composer_view.html">TweetComposerView</a></li>
+<li><a href="account.html">Account</a></li>
+<li><a href="account_credential.html">AccountCredential</a></li>
+<li><a href="account_store.html">AccountStore</a></li>
+<li><a href="request.html">Request</a></li>
+</ul>
+<h3>Events</h3>
+<h4>update</h4>
+<p>The 'update' event is fired on the Twitter module eveytime something changes about Twitter
+authentication. The event is sent with the following param:</p>
+<ul>
+<li><em>canSendTweet</em>: a boolean value (true/false) indicating if you are now able to send a tweet
+  on behalf the user</li>
+</ul>
+<p>Example usage:</p>
+<pre><code>Twitter.addEventListener('update', function(e) {
+  if(e.canSendTweet)
+    alert('Now we can send tweets :D');
+  else
+    alert('You are not allowed to send tweets, please check your authorization');
+});
+</code></pre>
+<h3>Constants</h3>
+<h4>Twitter.DONE</h4>
+<h4>Twitter.CANCELLED</h4>
+<p>Used when the <a href="tweet_composer_view.html">TweetComposerView</a> finished sending a tweet.</p>
+<h4>Twitter.REQUEST_METHOD_GET</h4>
+<h4>Twitter.REQUEST_METHOD_POST</h4>
+<h4>Twitter.REQUEST_METHOD_DELETE</h4>
+<p>Used on <a href="request.html">Request</a> to specify the type of request to be made to Twitter</p>
+<h2>Usage</h2>
+<p>Please see the example directory, since it contains several examples of all the API.</p>
+<h2>Author</h2>
+<p>Rúben Fonseca, (C) 2011</p>

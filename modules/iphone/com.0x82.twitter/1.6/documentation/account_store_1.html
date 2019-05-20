@@ -1,0 +1,61 @@
+<h1>AccountStore</h1>
+<h2>Reference</h2>
+<h3>- grantPermission({...})</h3>
+<p>You must call grantPermission on the AccountStore object before you'll be able to call any
+other method on the object. The grantPermission asks the user for permission to use the
+on-disc account storage.</p>
+<p>It accepts the following params:</p>
+<ul>
+<li><em>granted</em>: a callback called if the user grants permission to your application</li>
+<li>
+<p><em>denied</em>: a callback called if the user denies permission to your
+  application. It also contains an <code>error</code> field with the error message.</p>
+<pre><code>var accountStore = Twitter.createAccountStore();
+accountStore.grantPermission({
+  granted: function(e) {
+    alert('Permission granted!');
+  },
+  denied: function(e) {
+    alert('Permission denied: ' + e.error);
+  }
+});
+</code></pre>
+</li>
+</ul>
+<h3>- accounts()</h3>
+<p>Returns the stored list of accounts. Each object of the returned list is an <a href="account.html">Account</a> object.</p>
+<pre><code>accountStore.grantPermission({
+  granted: function(e) {
+    var accounts = accountStore.accounts();
+    alert("Number of accounts: " + accounts.length);
+  }
+});
+</code></pre>
+<h3>- accountWithIdentifier(identifier)</h3>
+<p>Returns an Account with the identifier passed as a parameter. Returns <code>null</code> if there isn't any.</p>
+<pre><code>accountStore.grantPermission({
+  granted: function(e) {
+    var account = accountStore.accountWithIdentifier('123123123-12312-3123-12312-31231');
+    Ti.API.log("Account is " + account);
+  }
+});
+</code></pre>
+<h3>- saveAccount(account, {...})</h3>
+<p>Saves an <a href="account.html">Account</a> into the AccountStore persistent storage. The first argument
+should be the filled Account object. The second argument is a dictionary with the following keys:</p>
+<ul>
+<li><em>success</em>: a callback fired if the save suceeds</li>
+<li>
+<p><em>failure</em>: a callback fired if the save fails. It contains an error message on the event <code>error</code> key
+  (see example)</p>
+<p>var account = ...;
+  accountStore.save(account, {
+    success: function(e) {
+      alert('Saved :D');
+    }, 
+    failure: function(e) {
+      alert('Failed. Reason: ' + e.error);
+    }
+  });</p>
+</li>
+</ul>

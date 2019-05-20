@@ -1,0 +1,71 @@
+<h2>INSTALL UXCam MODULE</h2>
+<h2>Mac OS X</h2>
+<p>Copy the distribution zip file into the <code>~/Library/Application Support/Titanium</code> folder</p>
+<h2>Linux</h2>
+<p>Copy the distribution zip file into the <code>~/.titanium</code> folder</p>
+<h2>Windows</h2>
+<p>Copy the distribution zip file into the <code>C:\ProgramData\Titanium</code> folder</p>
+<h2>REGISTER MODULE</h2>
+<p>Register your module with your application by editing <code>tiapp.xml</code> and adding your module.</p>
+<p>Example:</p>
+<pre><code>&lt;modules&gt;
+    &lt;module version="0.1"&gt;com.uxcam&lt;/module&gt;
+&lt;/modules&gt;
+</code></pre>
+<p>When you run your project, the compiler will combine your module along with its dependencies
+and assets into the application.</p>
+<h2>USING MODULE IN CODE</h2>
+<p>on app.js add the following:</p>
+<p>var UXCam = require('com.uxcam');</p>
+<p>Add the following line after your window is initialized</p>
+<p>UXCam.startWithKey("UXCAM_ACCOUNT_KEY");</p>
+<p><strong>create account in www.uxcam.com for account key</strong>     </p>
+<p>For example,</p>
+<p>var UXCam = require('com.uxcam');</p>
+<p>UXCam.startWithKey("UXCam_account_key");</p>
+<h3>OPTIONAL METHODS</h3>
+<h4>stopApplicationAndUploadData</h4>
+<p>Stops the UXCam application and sends captured data to the server. Use this to start sending the data on UXCam server without waiting for the app going into the background.</p>
+<p>UXCam.stopApplicationAndUploadData();</p>
+<h4>stopUXCamCameraVideo</h4>
+<p>Stops the faceCamera video recording if your application uses camera </p>
+<p>UXCam.stopUXCamCameraVideo ();</p>
+<h4>tagScreenName</h4>
+<p>UXCam captures the view controller name automatically but in case where it doesn\u2019t (such as in OpenGL) or you would like to set a different unique name, use this function.</p>
+<p>UXCam.tagScreenName("Screen Name")</p>
+<p>Parameters
+screenName: The name of the screen as required.</p>
+<h4>tagUsersName</h4>
+<p>UXCam uses a unique number to tag a device. You can tag a device allowing you to search for it on the dashboard and review their session further.</p>
+<p>UXCam.tagUsersName("User name");</p>
+<p>Parameters 
+userName: The name of the tag of device</p>
+<h4>markUserAsFavorite</h4>
+<p>You can mark a user specifically if certain condition are met making them a good user for further testing. You can then filter these users and perform further test.</p>
+<p>UXCam.markUserAsFavorite();</p>
+<h4>addTag</h4>
+<p>Insert a general tag into the timeline - stores the tag with the timestamp when it was added. </p>
+<p>UXCam.addTag("Tag");</p>
+<p>Parameters
+Tag: The name of the tag</p>
+<h4>occludeSensitiveScreen</h4>
+<p>Hide / un-hide the screen from being recorded. Call once with 'true' to start hiding the screen and later with 'false' to record normal contents again.
+Useful to hide sensitive entry fields that you would not want to record the contents of.</p>
+<p>UXCam.occludeSensitiveScreen(bool hideScreen);</p>
+<h2>Author</h2>
+<p>UXCam</p>
+<h2>Suppot</h2>
+<p>Please contact admin@uxcam.com</p>
+<h2>License</h2>
+<p>Copyright (c) 2015, UXCam
+All rights reserved.</p>
+<p>Redistribution and use in binary forms, without modification, are permitted provided that the following conditions are met:</p>
+<ol>
+<li>
+<p>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+</li>
+<li>
+<p>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>

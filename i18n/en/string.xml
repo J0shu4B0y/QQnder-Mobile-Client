@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- LOCAL -->
+	<string name="general0010">ru</string>
+
+	<!-- SYSTEM -->
+	<string name="sys0010">Байт</string>
+	<string name="sys0011">Кбайт</string>
+	<string name="sys0012">Мбайт</string>
+	<string name="sys0013">Гбайт</string>
+
+	<!-- MOUNTS -->
+	<string name="mounth1">Января</string>
+	<string name="mounth2">Февраля</string>
+	<string name="mounth3">Марта</string>
+	<string name="mounth4">Апреля</string>
+	<string name="mounth5">Мая</string>
+	<string name="mounth6">Июня</string>
+	<string name="mounth7">Июля</string>
+	<string name="mounth8">Августа</string>
+	<string name="mounth9">Сентября</string>
+	<string name="mounth10">Октября</string>
+	<string name="mounth11">Ноября</string>
+	<string name="mounth12">Декабря</string>
+	
+	<!-- MOUNTS SHORT -->
+	<string name="mounth_short_1">Янв</string>
+	<string name="mounth_short_2">Фев</string>
+	<string name="mounth_short_3">Мар</string>
+	<string name="mounth_short_4">Апр</string>
+	<string name="mounth_short_5">Мая</string>
+	<string name="mounth_short_6">Июн</string>
+	<string name="mounth_short_7">Июл</string>
+	<string name="mounth_short_8">Авг</string>
+	<string name="mounth_short_9">Сен</string>
+	<string name="mounth_short_10">Окт</string>
+	<string name="mounth_short_11">Ноя</string>
+	<string name="mounth_short_12">Дек</string>
+
+	<!-- WEEK DAYS -->
+	<string name="weekDay1">Пн</string>
+	<string name="weekDay2">Вт</string>
+	<string name="weekDay3">Ср</string>
+	<string name="weekDay4">Чт</string>
+	<string name="weekDay5">Пт</string>
+	<string name="weekDay6">Сб</string>
+	<string name="weekDay7">Вс</string>
+
+	<!-- UI -->
+	<string name="ui0010">Ошибка!</string>
+	<string name="ui0011">Войти</string>
+	<string name="ui0012">Загрузка…</string>
+	<string name="ui0013">Номер</string>
+	<string name="ui0014">Мы отправили вам код активации по SMS</string>
+	<string name="ui0015">Номер телефона</string>
+	<string name="ui0016">Пароль</string>
+	<string name="ui0017">Продолжить</string>
+	<string name="ui0018">Нажимая кнопку «Войти», я принимаю условия Пользовательского соглашения.</string>
+	<string name="ui0019">Регистрирую…</string>
+	<string name="ui0020">Меню</string>
+	<string name="ui0021">Код активации</string>
+	<string name="ui0022">Далее</string>
+	<string name="ui0023">Введите ваш номер телефона</string>
+	<string name="ui0024">Войти как пользователь: {{name}}</string>
+	<string name="ui0025">Начать работу</string>
+	<string name="ui0026">QQnder собирает скидки, акции и события в лучших магазинах и заведениях города.</string>
+	<string name="ui0027">Добро пожаловать!</string>
+	<string name="ui0028">Скрыть</string>
+	<string name="ui0029">Создать нового пользователя: {{name}}</string>
+	<string name="ui0030">Инструкция по восстановлению пароля отправлена на ваш адрес эл. почты</string>
+	<string name="ui0031">Назад</string>
+	<string name="ui0032">Создать</string>
+	<string name="ui0033">Мария Орлова</string>
+	<string name="ui0034">только что</string>
+	<string name="ui0035">Отправить отзыв</string>
+	<string name="ui0036">Ещё ещё отзывы +{{value}}</string>
+	<string name="ui0037">Вы посмотрели все предложения на сегодня.</string>
+	<string name="ui0038">Конец</string>
+	<string name="ui0039">Ещё раз</string>
+	<string name="ui0040">Добавить отзыв</string>
+	<string name="ui0041"></string>
+	<string name="ui0042">круглосуточно</string>
+	<string name="ui0043">закрыто</string>
+	<string name="ui0044">Профиль</string>
+	<string name="ui0045">Загрузка…</string>
+	<string name="ui0046">Собираем свежие предложения.</string>
+	<string name="ui0047">Вход</string>
+	<string name="ui0048">мин.</string>
+	<string name="ui0049">сек.</string>
+	<string name="ui0050">Приложение</string>
+	<string name="ui0051">Уведомления</string>
+	<string name="ui0052">Выйти</string>
+	<string name="ui0054">Очистить кеш</string>
+	<string name="ui0055">Дополнительно</string>
+	<string name="ui0056">Тех. поддержка</string>
+	<string name="ui0057">Пользовательское соглашение</string>
+	<string name="ui0058">Версия</string>
+	<string name="ui0059">Вкл</string>
+	<string name="ui0060">Выкл</string>
+	<string name="ui0061">Детали</string>
+	<string name="ui0062">Расскажите о проблеме</string>
+	<string name="ui0063">Обрабатываем…</string>
+	<string name="ui0064">до</string>
+	<string name="ui0065">Закрыть</string>
+	<string name="ui0066">Разблокировать</string>
+	<string name="ui0067">Пропустить</string>
+	<string name="ui0068">Разблокировано</string>
+	<string name="ui0069">Еда</string>
+	<string name="ui0070">Одежда</string>
+	<string name="ui0071">Веселье\nОтдых</string>
+	<string name="ui0072">Красота\nЗдоровье</string>
+	<string name="ui0073">Выберите категорию, содержащую акции, которые вы хотите посмотреть.</string>
+	<string name="ui0074">Лента</string>
+	<string name="ui0075">Недействительна</string>
+	<string name="ui0076">Другое</string>
+	<string name="ui0077">История</string>
+	<string name="ui0078">Активные</string>
+	<string name="ui0079">Выберите соц. сеть, в которой вы хотите поделиться акцией.</string>
+	<string name="ui0080">ВКонтакте</string>
+	<string name="ui0081">Twitter</string>
+	<string name="ui0082">Facebook</string>
+	<string name="ui0083">Поделиться</string>
+	<string name="ui0084">Сегодня</string>
+	<string name="ui0085">Вчера</string>
+	<string name="ui0086">Личные</string>
+	<string name="ui0087">Готово</string>
+	<string name="ui0088">Нравиться QQnder?</string>
+	<string name="ui0089">Оцените наше приложение и оставьте отзыв. Для нас это совсем-совсем не все равно.</string>
+	<string name="ui0090">Да, хорошо</string>
+	<string name="ui0091">Нет, спасибо</string>
+	<string name="ui0092">Оценить приложение</string>
+	<string name="ui0093">Событие</string>
+	<string name="ui0094">Выбрать дату</string>
+	<string name="ui0095">Дата рождения</string>
+	<string name="ui0096">Ваш пол</string>
+	<string name="ui0097">В приложении действуют ограничения на некоторые предложения, укажите свой пол и дату рождения, чтобы снять эти ограничения.</string>
+	<string name="ui0098">Ваше имя</string>
+	<string name="ui0099">Мужской</string>
+	<string name="ui0100">Женский</string>
+	<string name="ui0101">Отмена</string>
+	<string name="ui0102">Запрос в тех. поддержку QQnder</string>
+	<string name="ui0103">Текст сообщения</string>
+	<string name="ui0104">Соглашение</string>
+	<string name="ui0105">Лента пуста!</string>
+	<string name="ui0106">Лайкните предложения, чтобы добавить их в «Ленту»</string>
+	<string name="ui0107">Всё вместе</string>
+	<string name="ui0108">Любимые предложения</string>
+	<string name="ui0109">Последние запросы</string>
+	<string name="ui0110">Акция не действительна</string>
+	<string name="ui0111">день</string>
+	<string name="ui0112">дня</string>
+	<string name="ui0113">дней</string>
+	<string name="ui0114">час</string>
+	<string name="ui0115">часа</string>
+	<string name="ui0116">часов</string>
+	<string name="ui0117">— До завершения осталось</string>
+	<string name="ui0118">Перейти на сайт</string>
+	<string name="ui0119">Сайт</string>
+	<string name="ui0120">— До завершения остался</string>
+	<string name="ui0121">Заведение, товар, услуга…</string>
+	<string name="ui0122">Отмена</string>
+	<string name="ui0123">Предложения</string>
+	<string name="ui0124">подписчик</string>
+	<string name="ui0125">подписчика</string>
+	<string name="ui0126">подписчиков</string>
+	<string name="ui0127">{{number}} {{string}}</string>
+	<string name="ui0128">Смотреть все</string>
+	<string name="ui0129">Подписаться</string>
+	<string name="ui0130">Отписаться</string>
+	<string name="ui0131">9 Человек</string>
+	<string name="ui0132">10 Человек</string>
+	<string name="ui0133">Кол-во человек</string>
+	<string name="ui0134">Вы пока нечего не искали</string>
+	<string name="ui0135">Дом\nУют</string>
+	<string name="ui0136"></string>
+	<string name="ui0137"></string>
+	<string name="ui0138">Не найдено!</string>
+	<string name="ui0139">По вашему запросу ничего не найдено. Пожалуйста, уточните фразу и начните поиск снова.</string>
+	<string name="ui0140"></string>
+	<string name="ui0141"></string>
+	<string name="ui0142"></string>
+	<string name="ui0143">Заведение</string>
+	<string name="ui0144">У вас не установлен WhatsApp!</string>
+	<string name="ui0145">Другое</string>
+	<string name="ui0146">Гео-уведомления</string>
+	<string name="ui0147">Отзывы: {{value}}</string>
+	<string name="ui0148">Поделись предложением с друзьями и получи подарок.</string>
+	<string name="ui0149">Скидка</string>
+	<string name="ui0150">Событие</string>
+	<string name="ui0151">Не могу дозвониться</string>
+	<string name="ui0152">Заведение закрылось</string>
+	<string name="ui0153">Недействительно</string>
+	<string name="ui0154">Сообщив нам о проблеме, вы даете возможность владельцу заведения, а также нашей тех.поддержке ознакомиться с возникшими у вас неудобствами и приложить все усилия для их устранения.</string>
+	<string name="ui0155">Расскажите о проблеме</string>
+	<string name="ui0156">Оставьте отзыв о месте, которое вы посетили, или об их товарах или услугах, поделитесь своим мнением с другими пользователями.</string>
+	<string name="ui0157">Карта</string>
+	<string name="ui0158">Отзывы</string>
+	<string name="ui0159">Без имени</string>
+	<string name="ui0160">Ваш отзыв поможет другим людям!</string>
+	<string name="ui0161">Запрос о проблеме отправлен.</string>
+	<string name="ui0162">Нет отзывов!</string>
+	<string name="ui0163">Оставь отзыв первым пока это не сделал кто-то другой!</string>
+	<string name="ui0164">Новый отзыв</string>
+	<string name="ui0165">Случайный\nвыбор</string>
+	<string name="ui0166">Осталось символов: {{value}}</string>
+	<string name="ui0167">WhatsApp</string>
+	<string name="ui0168">Ваш репост в социальную сеть отправлен. Подарок за репост сохранен в «Ленте»!</string>
+	<string name="ui0169">Подарки</string>
+	<string name="ui0170">Подарок</string>
+	<string name="ui0171">Цена</string>
+	<string name="ui0172">Вместо</string>
+	<string name="ui0173">Персональные\nпредложения</string>
+	<string name="ui0174">Получай подборку скидок, акций и событий, которая составляется на основе анализа твоих предпочтений, местоположения и прочей магии.</string>
+	<string name="ui0175">Камера</string>
+	<string name="ui0176">Галерея</string>
+	<string name="ui0177">Персонализируйте учётную запись QQnder, добавив свою фотографию.</string>
+	<string name="ui0178">Акция</string>
+	<string name="ui0179">ВНИМАНИЕ!</string>
+	<string name="ui0180">Заведения</string>
+	<string name="ui0181">Смотреть все</string>
+	<string name="ui0182">У вас не установлен Twitter!</string>
+	<string name="ui0183">Планируй досуг</string>
+	<string name="ui0184">Всё, что вам нравится попадает в «Ленту». Используя раздел «Лента» вы сможете с легкостью спланировать свой досуг и при этом хорошо сэкономить.</string>
+	<string name="ui0185">Будь в тренде</string>
+	<string name="ui0186">Подписывайся на любимые заведения и будь в курсе новых предложений, чтобы экономить каждый день.</string>
+	<string name="ui0187">Делись с друзьями</string>
+	<string name="ui0188">Пользуйся привилегиями и получай подарки за репосты в социальных сетях, делись скидками, событиями и акциями с друзьями.</string>
+	<string name="ui0189">Город</string>
+	<string name="ui0190">Ваш</string>
+	<string name="ui0191">Заведение, товар, услуга…</string>
+	<string name="ui0192">Воспользуйтесь поиском, чтобы найти товары и услуги со скидками, а также подписаться на заведения</string>
+	<string name="ui0193">или</string>
+	<string name="ui0194">посмотрите предложения по следующим категориям</string>
+	<string name="ui0195">Добро пожаловать!</string>
+	<string name="ui0196">Подтверждение</string>
+	<string name="ui0197">Ожидайте SMS {{value}}</string>
+	<string name="ui0198">Подписаться на заведение</string>
+	<string name="ui0199">Отписаться от заведения</string>
+	<string name="ui0200">Поделитесь этим предложением</string>
+	<string name="ui0201">Расскажите о предложении своим друзьям. Среди ваших друзей наверняка есть и наши друзья.</string>
+
+	<!-- Cityes -->
+	<string name="city1">Алматы</string>
+
+	<!-- Interface errors -->
+	<string name="x0010">Не найдено активное интернет-соединение. Вероятнее всего, временно отсутствует подключение. Проверьте соединение и повторите попытку.</string>
+    <string name="x0011">Не удаётся установить соединение с сервером. Возможно, сервер недоступен или требуется проверка настроек интернет подключения.</string>
+    <string name="x0014">У нас что-то сломалось. Информация об ошибке отправлена в службу поддержки и будет исправлена в ближайшее время.</string>
+    <string name="x0015">Если вы не получили SMS, попробуйте повторить попытку.</string>
+    <string name="x0016">Выбранная картинка имеет очень низкое разрешение, выберите другую картинку.</string>
+
+    <!-- HELP mess -->
+	<string name="h0010">Вы на странице акций</string>
+	<string name="h0011">Если вас заинтерисовала акция, нажмите «Сердечко», а если нет «Крестик» и мы покажем вам другую.</string>
+	<string name="h0012">Здесь появится список понравившихся акций.</string>
+	<string name="h0013">Чтобы любимая акция была всегда под рукой — добавь её в список, нажав «Сердечко».</string>
+
+    <!-- GEO push -->
+    <string name="g0010">Рядом с «{{place_name}}», хотите посмотреть предложения заведения?</string>
+    <string name="g0011">Недалеко от «{{place_name}}», хотите посмотреть предложения заведения?</string>
+    <string name="g0012">Рукой подать до «{{place_name}}», хотите посмотреть предложения заведения?</string>
+    <string name="g0013">В двух шагах от «{{place_name}}», хотите посмотреть предложения заведения?</string>
+    <string name="g0014">В нескольких шагах от «{{place_name}}», хотите посмотреть предложения заведения?</string>
+    <string name="g0015">Неподалеку от «{{place_name}}», хотите посмотреть предложения заведения?</string>
+    <string name="g0016">Вы совсем близко от «{{place_name}}», хотите посмотреть предложения заведения?</string>
+    <string name="g0017">Вы в паре минут от «{{place_name}}», хотите посмотреть предложения заведения?</string>
+    <string name="g0020">посмотреть!</string>
+
+    <!-- GEO errors -->
+	<string name="w0010">Чтобы увидеть акции, скидки и события поблизости, включите службы геолокации.</string>
+	<string name="w0011">Включить геолокацию</string>
+
+	<!-- Permissions -->
+	<string name="p0010">OK</string>
+	<string name="p0011">Настройки</string>
+	<string name="p0012">Разрешите доступ</string>
+	<string name="p0013">Для получения информации об интересных предложениях рядом с вами QQnder нужен доступ к геолокации.\n\nПожалуйста, включите доступ для QQnder в настройках устройства > Конфидендиальность > Службы геолокации.</string>
+
+    <!-- Local Notifications -->
+    <string name="ln0010">Приближается время обеда! Хочешь узнать где рядышком вкусно покушать?</string>
+
+    <!-- Purpose Messages -->
+    <string name="p0001">Ваша геопозиция используется для показа акции/скидок/событий находящихся рядом с вами.</string>
+
+    <!-- Countries -->
+    <string name="country_KZ">Казахстан</string>
+</resources>

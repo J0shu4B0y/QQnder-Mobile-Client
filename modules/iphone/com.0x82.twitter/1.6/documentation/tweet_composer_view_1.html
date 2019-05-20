@@ -1,0 +1,74 @@
+<h1>TweetComposerView</h1>
+<h2>Description</h2>
+<p>The TweetComposerViewController class presents a view to the user to compose a tweet.</p>
+<p>Although you may perform Twitter requests on behalf of the user, you cannot
+append text, images, or URLs to tweets without the user’s knowledge. Hence, you
+can set the initial text and other content before presenting the tweet to the
+user but cannot change the tweet after the user views it. All of the methods
+used to set the content of the tweet return a Boolean value. The methods return
+<code>false</code> if the content doesn’t fit in the tweet or the view was already presented to
+the user and the tweet can no longer be changed.</p>
+<h2>Reference</h2>
+<h3>- canSendTweet()</h3>
+<p>Returns whether you can send a Twitter request.</p>
+<pre><code>var composer = Twitter.createTweetComposerView();
+if(composer.canSendTweet()) {
+  alert("Can send tweet");
+} else {
+  alert("Oops");
+}
+</code></pre>
+<h3>- setInitialText(text)</h3>
+<p>Sets the initial text for a tweet. Returns <code>true</code> if successful. <code>false</code> if text does not fit in the currently
+available character space or the view was presented to the user.</p>
+<pre><code>var composer = Twitter.createTweetComposerView();
+composer.setInitialText("Hello Tweet");
+</code></pre>
+<h3>- addImage(blob)</h3>
+<p>Adds an image to the tweet. The argument bust be a <code>TiBlob</code> (check the example). Returns <code>true</code> if successful. <code>false</code>
+if image does not fit in the currently available character space or the view was presented to the user.</p>
+<pre><code>var composer = Twitter.createTweetComposerView();
+var image = Ti.Filesystem.getFile('rails.png');
+composer.addImage(image.read()); // always use a TiBlob!
+</code></pre>
+<h3>- removeAllImages()</h3>
+<p>Removes all images from the tweet. Returns <code>true</code> if successful. <code>false</code> if the images were not removed because the
+view was presented to the user.</p>
+<pre><code>var composer = Twitter.createTweetComposerView();
+composer.removeAllImages();
+</code></pre>
+<h3>- addURL(url)</h3>
+<p>Adds a URL to the tweet. Returns <code>true</code> if successful. <code>false</code> if url does not
+fit in the currently available character space or the view was presented to the
+user.</p>
+<pre><code>var composer = Twitter.createTweetComposerView();
+composer.addURL('http://google.com');
+</code></pre>
+<h3>- removeAllURLs()</h3>
+<p>Removes all URLs from the tweet. Returns <code>true</code> if successful. <code>false</code> if the
+URLs were not removed because the view was presented to the user.</p>
+<pre><code>var composer = Twitter.createTweetComposerView();
+composer.removeAllURLs();
+</code></pre>
+<h3>- open()</h3>
+<p>Opens the Tweet sheet to the user, so he/she can personalize the message and finally send
+the tweet. The view will appear in front of all the present views, and works as a modal
+window.</p>
+<pre><code>var composer = Twitter.createTweetComposerView();
+composer.open();
+</code></pre>
+<h2>Events</h2>
+<h3>- complete</h3>
+<p>Sent after the user sends or cancels a Tweet. The event object contains a key <code>result</code> with
+the result of the operation.</p>
+<pre><code>var composer = Twitter.createTweetComposerView();
+composer.addEventListener('complete', function(e) {
+  if(e.result == Twitter.DONE)
+    alert('Sent! :D');
+
+  if(e.result == Twitter.CANCELLED)
+    alert('Cancelled :(');
+});
+composer.open();
+</code></pre>
+<h3></h3>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.qqnder.app</id>
+    <name>QQnder</name>
+    <version>2.0.9</version>
+    <publisher>QQnder LLP</publisher>
+    <url>https://qqnder.com</url>
+    <description>undefined </description>
+    <copyright>QQnder LLP 2016</copyright>
+    <icon>DefaultIcon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>false</analytics>
+    <guid>af735237-5771-4290-9777-eb9faf3a9d6a</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <property name="run-on-main-thread" type="bool">true</property>
+    <ios>
+        <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+        <default-background-color>#FAFAFA</default-background-color>
+        <plist>
+            <dict>
+                <key>Pushwoosh_ALERT_TYPE</key>
+                <string>BANNER</string>
+                <key>UIBackgroundModes</key>
+                <array>
+                    <string>location</string>
+                    <string>remote-notification</string>
+                </array>
+                <key>NSBluetoothPeripheralUsageDescription</key>
+                <string/>
+                <key>NSAppleMusicUsageDescription</key>
+                <string/>
+                <key>NSLocationWhenInUseUsageDescription</key>
+                <string/>
+                <key>NSCameraUsageDescription</key>
+                <string/>
+                <key>NSPhotoLibraryUsageDescription</key>
+                <string/>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <string/>
+                <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+                <string/>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+                <key>CFBundleURLTypes</key>
+                <array>
+                    <dict>
+                        <key>CFBundleURLName</key>
+                        <string>com.qqnder.app</string>
+                        <key>CFBundleURLSchemes</key>
+                        <array>
+                            <string>fb818899971464256</string>
+                        </array>
+                    </dict>
+                </array>
+                <key>FacebookAppID</key>
+                <string>818899971464256</string>
+                <key>FacebookDisplayName</key>
+                <string>QQnder</string>
+                <key>LSApplicationQueriesSchemes</key>
+                <array>
+                    <string>fbapi</string>
+                    <string>fb-messenger-api</string>
+                    <string>fbauth2</string>
+                    <string>fbshareextension</string>
+                    <string>twitter</string>
+                    <string>whatsapp</string>
+                    <string>instagram</string>
+                    <string>comgooglemaps</string>
+                </array>
+                <key>NSAppTransportSecurity</key>
+                <dict>
+                    <key>NSAllowsArbitraryLoads</key>
+                    <true/>
+                    <key>NSExceptionDomains</key>
+                    <dict>
+                        <key>facebook.com</key>
+                        <dict>
+                            <key>NSIncludesSubdomains</key>
+                            <true/>
+                            <key>NSExceptionRequiresForwardSecrecy</key>
+                            <false/>
+                        </dict>
+                        <key>fbcdn.net</key>
+                        <dict>
+                            <key>NSIncludesSubdomains</key>
+                            <true/>
+                            <key>NSExceptionRequiresForwardSecrecy</key>
+                            <false/>
+                        </dict>
+                        <key>akamaihd.net</key>
+                        <dict>
+                            <key>NSIncludesSubdomains</key>
+                            <true/>
+                            <key>NSExceptionRequiresForwardSecrecy</key>
+                            <false/>
+                        </dict>
+                        <key>qqnder.com</key>
+                        <dict>
+                            <!-- Set TLS v1.0 as the minimum TLS version -->
+                            <key>NSExceptionMinimumTLSVersion</key>
+                            <string>TLSv1.0</string>
+                            <!-- Can use other ciphers besides forward secrecy ciphers -->
+                            <key>NSExceptionRequiresForwardSecrecy</key>
+                            <false/>
+                            <!-- Allow HTTP connections -->
+                            <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                            <true/>
+                        </dict>
+                        <key>vk.com</key>
+                        <dict>
+                            <!-- Set TLS v1.0 as the minimum TLS version -->
+                            <key>NSExceptionMinimumTLSVersion</key>
+                            <string>TLSv1.0</string>
+                            <!-- Can use other ciphers besides forward secrecy ciphers -->
+                            <key>NSExceptionRequiresForwardSecrecy</key>
+                            <false/>
+                            <!-- Allow HTTP connections -->
+                            <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                            <true/>
+                        </dict>
+                        <key>kxcdn.com</key>
+                        <dict>
+                            <!-- Set TLS v1.0 as the minimum TLS version -->
+                            <key>NSExceptionMinimumTLSVersion</key>
+                            <string>TLSv1.0</string>
+                            <!-- Can use other ciphers besides forward secrecy ciphers -->
+                            <key>NSExceptionRequiresForwardSecrecy</key>
+                            <false/>
+                            <!-- Allow HTTP connections -->
+                            <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                            <true/>
+                        </dict>
+                    </dict>
+                </dict>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <modules>
+        <module platform="iphone" version="1.8.4">dk.napp.social</module>
+        <module platform="commonjs" version="0.2.2">To.ImageCache</module>
+        <module platform="iphone">com.pushwoosh.module</module>
+        <module platform="iphone" version="5.6.0">facebook</module>
+        <module platform="iphone" version="3.0.1">ti.map</module>
+        <module platform="iphone">ti.reviewdialog</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">false</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="windows">false</target>
+    </deployment-targets>
+    <sdk-version>7.5.0.GA</sdk-version>
+</ti:app>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="appname">QQnder</string>
+    <string name="NSLocationAlwaysUsageDescription">Вы сможете получать уведомления об интересных и выгодных предложениях рядом с вами.</string>
+    <string name="NSLocationWhenInUseUsageDescription">Вы сможете получать близжайшие предложения только из приложения.</string>
+    <string name="NSLocationAlwaysAndWhenInUseUsageDescription">Если вы выберете давать разрешение к местоположению постоянно, вы сможете получать уведомления об интересных и выгодных предложениях рядом с вами. Если вы выберете давать разрешение только при использовании приложения, вы сможете получать близжайшие предложения только из приложения.</string>
+    <string name="NSCameraUsageDescription">Это позволит вам сделать фото и загрузить его прямо в QQnder.</string>
+    <string name="NSPhotoLibraryUsageDescription">Это позволит вам загрузить фото из вашей библиотеки.</string>
+    <string name="NSBluetoothPeripheralUsageDescription">Можем ли мы подключиться к устройствам Bluetooth?</string>
+    <string name="NSAppleMusicUsageDescription">Ваша медиатека будет использоваться для обеспечения более высокого качества рекламы для вас.</string>
+</resources>
